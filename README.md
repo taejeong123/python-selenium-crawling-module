@@ -70,16 +70,18 @@ new_tab_close(driver, sleep_t):
 ## 4. Download
 ### 4.1. Download Images
 ``` python
-download(src, save_root, idx)
+download(src, save_root, idx, ext='.jpg')
 ```
 > - src: image resource
 > - save_root: save path
 > - idx: image idx
+> - ext: image save extension
 
 ### 4.2. Download BASE64 Images
 ``` python
-download_base64(src, save_root, idx)
+download_base64(src, save_root, idx, ext='.jpg')
 ```
 > - src: image resource
 > - save_root: save path
 > - idx: image idx
+> - ext: image save extension
