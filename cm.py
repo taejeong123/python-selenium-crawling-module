@@ -63,21 +63,20 @@ def new_tab_close(driver, sleep_t):
     driver.switch_to.window(driver.window_handles[0])
 
 
+# download images
+def download(src, save_root, idx, ext='.jpg'):
+    img_data = requests.get(src).content
+    inner_download(save_root, img_data, idx, ext)
+
+
 # download base64 images
-def download_base64(src, save_root, idx):
+def download_base64(src, save_root, idx, ext='.jpg'):
     base64_image_data = src.split(',')[1]
     base64_image_data = base64_image_data + '=' * (4 - len(base64_image_data) % 4)
-    inner_download(save_root, base64.b64decode(base64_image_data), idx)
+    inner_download(save_root, base64.b64decode(base64_image_data), idx, ext)
 
 
-# download images
-def download(src, save_root, idx):
-    img_data = requests.get(src).content
-    inner_download(save_root, img_data, idx)
-
-
-@staticmethod
-def inner_download(save_root, img_data, idx):
-    img_save_path = os.path.join(save_root, str(idx + 1) + '.jpg')
+def inner_download(save_root, img_data, idx, ext):
+    img_save_path = os.path.join(save_root, str(idx + 1) + ext)
     with open(img_save_path, 'wb') as handler:
         handler.write(img_data)
