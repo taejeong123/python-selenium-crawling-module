@@ -70,18 +70,31 @@ new_tab_close(driver, sleep_t):
 ## 4. Download
 ### 4.1. Download Images
 ``` python
-download(src, save_root, idx, ext='.jpg')
+download(src, save_root, idx)
 ```
 > - src: image resource
 > - save_root: save path
 > - idx: image idx
-> - ext: image save extension
 
 ### 4.2. Download BASE64 Images
 ``` python
-download_base64(src, save_root, idx, ext='.jpg')
+download_base64(src, save_root, idx)
 ```
 > - src: image resource
 > - save_root: save path
 > - idx: image idx
-> - ext: image save extension
+
+## 5. Btn Click
+### 5.1. btn click
+``` python
+click(driver, selector)
+```
+> - driver: chromedriver object
+> - selector: page element selector
+
+### 5.2. btn argument click
+``` python
+click_arg(driver, selector)
+```
+> - driver: chromedriver object
+> - selector: page element selector
