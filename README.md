@@ -84,15 +84,15 @@ download_base64(src, save_root, idx)
 > - save_root: save path
 > - idx: image idx
 
-## 5. Btn Click
-### 5.1. btn click
+## 5. Button Click
+### 5.1. Button click
 ``` python
 click(driver, selector)
 ```
 > - driver: chromedriver object
 > - selector: page element selector
 
-### 5.2. btn argument click
+### 5.2. Button argument click
 ``` python
 click_arg(driver, selector)
 ```
