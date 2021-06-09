@@ -12,18 +12,20 @@ import os
 import time
 import base64
 import requests
+import chromedriver_autoinstaller
 
 from tqdm import trange
 from selenium import webdriver
 
 
 # 1. open chromedriver & setting
-def chromedriver_settings(header, gpu, log, driver_root):
+def chromedriver_settings(header, gpu, log):
+    path = chromedriver_autoinstaller.install()
     options = webdriver.ChromeOptions()
     if not header: options.add_argument('--headless')
     if not gpu: options.add_argument('--disable-gpu')
     if not log: options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.Chrome(driver_root, options=options)
+    driver = webdriver.Chrome(path, options=options)
 
     return driver
 
