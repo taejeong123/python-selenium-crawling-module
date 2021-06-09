@@ -20,12 +20,11 @@ with urllib.request.urlopen('https://taejeong123.github.io/python-selenium-crawl
 
 ## 1. Open Chromedriver & Chromedriver Settings
 ``` python
-driver = chromedriver_settings(header=True, gpu=False, log=False, driver_root='chromedriver.exe')
+driver = chromedriver_settings(header=True, gpu=False, log=False)
 ```
 > - header: show chrome window
 > - gpu: gpu settings
 > - log: show DevTools message
-> - driver_root: chromedriver path
 
 ## 2. Scroll
 ### 2.1. Scroll Page Smoothly
