@@ -3,13 +3,15 @@ Crawling Module
 
 ## ⚡ Simple Crawling Module using Python Selenium
 
-✔ CDN URL: http://duuboo.net/cdn/cm.py<br/>
+
+✔ CDN URL: https://taejeong123.github.io/python-selenium-crawling-module/cm.py<br/>
+✔ Usage URL: https://taejeong123.github.io/python-selenium-crawling-module<br/>
 ✔ Copy this code to use my cdn
 
 ``` python
 import urllib.request
 
-with urllib.request.urlopen('http://duuboo.net/cdn/cm.py') as response:
+with urllib.request.urlopen('https://taejeong123.github.io/python-selenium-crawling-module/cm.py') as response:
     code = response.read()
     exec(code)
 
