@@ -4,8 +4,8 @@ Crawling Module
 ## ⚡ Simple Crawling Module using Python Selenium
 
 
-✔ CDN URL: https://taejeong123.github.io/python-selenium-crawling-module/cm.py<br/>
-✔ Usage URL: https://taejeong123.github.io/python-selenium-crawling-module<br/>
+✔ CDN URL: [https://taejeong123.github.io/python-selenium-crawling-module/cm.py](https://taejeong123.github.io/python-selenium-crawling-module/cm.py)<br/>
+✔ Usage URL: [https://taejeong123.github.io/python-selenium-crawling-module](https://taejeong123.github.io/python-selenium-crawling-module)<br/>
 ✔ Copy this code to use my cdn
 
 ``` python
